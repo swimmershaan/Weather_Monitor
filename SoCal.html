@@ -75,8 +75,11 @@
             <a href="https://www.swpc.noaa.gov/communities/space-weather-enthusiasts-dashboard" target="_blank">Space Weather</a>
         </div>
     </div>
-   
-</ul>
+    </ul>
+    
+    <div id="openweathermap-widget-19"  style="position: absolute; top:10px; bottom: 0; right: 10px; z-index: 0;" ></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 19,cityid: '5363990',appid: 'f1e4250811c7c659958f3e65a20effd5',units: 'imperial',containerid: 'openweathermap-widget-19',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+    
    
 <div id="timestamp" style="text-align:center; position: absolute;top: 50px; left: 0; right: 0; height: 80px; color: #ffffff">FRAME TIME</div>
 
@@ -92,7 +95,7 @@
 });
    
    
-    var map = L.map('mapid').setView([32.802107,-117.038372], 7);
+    var map = L.map('mapid').setView([32.802107,-117.038372], 8);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attributions: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
